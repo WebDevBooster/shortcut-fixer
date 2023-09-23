@@ -3,15 +3,12 @@
   "name": "Restore Ctrl+V",
   "version": "1.0",
   "description": "Restores the default behavior of the CTRL + V shortcut for a specific website.",
-  "background": {
-    "service_worker": "background.js"
-  },
   "permissions": ["activeTab"],
   "content_scripts": [
     {
       "matches": ["*://chat.openai.com/*"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "all_frames": true
     }
   ]
 }
-
