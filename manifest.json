@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Restore Ctrl+V",
+  "name": "Shortcut Fixer",
   "version": "1.0",
-  "description": "Restores the default behavior of the CTRL + V shortcut for a specific website.",
+  "description": "Restores the default behavior of the CTRL + V shortcut for a specific website (chat.openai.com).",
   "permissions": ["activeTab"],
   "content_scripts": [
     {
