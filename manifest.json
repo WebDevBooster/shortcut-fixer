@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Shortcut Fixer",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Restores the default behavior of the CTRL + V shortcut for a specific website (chat.openai.com).",
   "permissions": ["activeTab"],
   "content_scripts": [
     {
-      "matches": ["*://chat.openai.com/*"],
+      "matches": ["*://chat.openai.com/*", "*://chatgpt.com/*"],
       "js": ["content.js"],
       "all_frames": true
     }
